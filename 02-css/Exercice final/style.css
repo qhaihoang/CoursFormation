@@ -1,0 +1,107 @@
+ *, ::before, ::after
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+} 
+body {
+
+  background-image: url(../../images/main-bcg.jpeg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+.navbar {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(15, 152, 15);
+  margin: 6px 0;
+}
+.ContainerTitre{
+    height: 50%;
+    margin: 15%;
+    position: relative;
+}
+.TitreVert {
+  color: rgb(15, 152, 15);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: GrandHotel;
+}
+.TitreGros {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 2.5em;
+}
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #04aa6d;
+  border: 5px solid;
+  position: absolute;
+  
+  transform: translateX(270%);
+ 
+  
+}
+@font-face {
+  font-family: "GrandHotel";
+  src: url(../../Font/GrandHotel-Regular.ttf);
+}
+
+.DescriptionSite{
+    background-color: rgb(218, 241, 234);
+    
+    border-bottom: transparent ;
+    border-top: solid 5px;
+    border-color: green;
+    background-size: cover;
+    display: flex;
+    height: 25vh;
+    width: 100%;
+    
+}
+.Section3{
+    background-color: white;
+    height: 400px;
+    width: 100%;
+    
+    
+    
+}
+.Teapotimg{
+    max-width: 30%;
+    margin: 5%;
+    border: solid green 5px;
+}
+
+.TitleNewFont{
+    position: relative;
+    font-family: GrandHotel;
+    font-size: 25px;
+    color: green;
+    width: 50%;
+    
+}
+/* .Section4{
+    height: 400px;
+    width: 100%;
+    padding: 2%;
+    background-color: rgb(209, 232, 245);
+    
+}
+.ImgProduct{
+    height: 225px;
+    width: 200px;
+    border-radius: 10%;
+} */
+
+
+
+    

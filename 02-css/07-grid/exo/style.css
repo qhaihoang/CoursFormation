@@ -1,0 +1,45 @@
+ *,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    height: 100vh;
+    display: grid;
+ 
+}
+
+h1 {
+
+    text-align: center;
+    margin: auto;
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(2, 50%);
+    justify-content: center;
+}
+article{
+    margin: 10px;
+    border: solid grey 1px;
+    background: grey;
+}
+.textcontainer{
+    padding: 10%;
+    font-size: 0.7em;
+    background: white;
+    
+}
+img{
+    width: 100%;
+    max-height: 150px;
+}
+h4,p{
+    margin:0;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page cours html</title>
+    <!--Balises influençant le SEO(search engine optimisation)-->
+    <meta name="author" content="Quentin Hoang">
+    <meta name="description" content="page cours">
+    <!--description pas plus de 140-160 caractères-->
+    <meta name="keywords" content="html, head, balises, meta tag">
+    <!--mots clés pour les recherches-->
+    <link rel="shortcut icon" href="../images/image.jpg" type="image/x-icon">    
+</head>
+<body>
+    <!--balise block= toute la largeur, balise inline= juste son contenu-->
+    <!--balise sémantique= balise avec pas/peu d'effet, se retrouver dans son code, exemple en dessous-->
+    <header id="Firsttag"></header>
+    <nav></nav>
+    <main></main>
+    <aside></aside>
+    <footer></footer>
+    <!--Balises avec règle-->
+    <section>une section doit contenir un titre</section> 
+    <article>article doit contenir un titre</article>
+    <p>un paragraphe ne peut pas contenir de block</p>
+    <ul>
+        <li>Une unordered list ne peut contenir que des "li" list item</li>
+        <li>Chaque li va créer un nouveau point, un li peut contenir n'importe quel block</li>
+    </ul>
+    <ol>
+        <li>une ordered list suit les mêmes règles qu'une "ul"</li>
+        <li>les puces sont remplacées par des numéros/chiffres</li>
+    </ol>
+    <!--Les titres vont de h1à h6, par convention on essayera de garde les plus gros avant les plus petits-->
+    <h1>Gros titre h1</h1>
+    <h2>Titre h2</h2>
+    <h3>Titre h3</h3>
+    <h4>Titre h4</h4>
+    <h5>Titre h5</h5>
+    <h6>Petit titre h6</h6>
+    <div>aucune règle, sémantique ou effet, la divv sert juste à diviser et structurer votre page</div>
+
+    <!--Balises inline-->
+<p>
+    <strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</strong>
+    <!--balise strong, ne peux utiliser (indique qqch d'important)-->
+     <em>Quo unde incidunt quisquam illum sapiente distinctio aspernatur nostrum, nulla fuga iusto eveniet cum nemo officiis ex dolores ut dolorum harum saepe.</em> <br>
+    <i>Et fugit, pariatur soluta repellendus sapiente nesciunt praesentium aspernatur reiciendis consequatur ad voluptatum, deserunt dolorum provident molestias illum delectus cum voluptate est nihil facere officiis incidunt!</i> <br> <u>Aspernatur qui facere sapiente?</u>
+    <br><abbr title="HyperText Markup Language">HTML</abbr>
+
+    <!--abbr = abbreviation i=italic em=italic imporant-->
+    <!--Les balises tel que strong, em, i... ne doivent pas être utilisées pour de la mise en forme.
+    Elles ont chacune un sens précis qui sera indiqué aux moteurs de recherches, synthèses vocales et autres logiciels et bots-->
+</p>
+<hr> <!--ajoute une ligne-->
+<p>
+    <a href="02-tableau.html">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</a> <br>
+     <a href="./03-formulaire.html">Voluptas labore esse, nesciunt totam harum similique, cumque deserunt tempore blanditiis, quae nulla facilis hic est autem reprehenderit fugit aperiam maxime porro.</a> <br>
+    <a href="https://www.google.fr/search?q=pizza"target="_blank">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a> <br>
+    <a href="#Firsttag">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a> <br>
+     <span class="span1 sp1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span> <br>
+     <img src="../images/image.jpg" alt="photo planète" width="200" height="200" loading="lazy" decoding="async"> 
+     
+    <!--Les balises "a" servent à créer des liens interne au site, externe ou des ancres.
+    Il est conseillé pour les liens externe au site, d'utiliser l'attribut targer="_blank" pour ouvrir le lien sur un nouvel onglet.-->
+    <!--Un snippet est un terme de programmation informatique désignant une petite portion réutilisable de code source ou de texte.-->
+    <img src="../images/image.jpg" alt="description" width="200" height='200' loading='lazy' decoding='async'>
+    <video src=""controls loop muted autoplay></video>
+    <audio src=""controls loop></audio>
+    <video controls>
+        <source src="" type="video/mp4">
+        <source src="" type="video/x-wav">
+        <source src="" type="video/x-msvideo">
+        <p>Votre navigateur ne supporte pas les videos html5</p>
+    </video> <br>
+    <iframe src="./02-tableau.html" frameborder="0"></iframe>
+    <!-- liste pour videos :controls loop mutes poster autoplay-->
+    <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        
+        Sit nemo aut, aperiam odit odio consectetur doloribus quam              
+        similique hic enim repudiandae molestias explicabo magni ab voluptatibus consequuntur quasi quaerat consequatur?
+    
+    </pre>
+</p>
+
+
+
+
+</body>
+</html>

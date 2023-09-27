@@ -1,0 +1,97 @@
+*, ::before, ::after
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body
+{
+    height: 400vh;
+    background-color: antiquewhite;
+}
+/* 
+    Ici on va voir les propriétés de "position", "top", "right", "left", "bottom" et par la même occasion, car il faut bien décorer, les différentes propriétés de "gradient"
+    Les propriétés "top", "right", "left", "bottom" ne fonctionnent que sur des éléments positionnés.
+*/
+header
+{
+    padding: 1rem;
+    background: slategray;
+    color: antiquewhite;
+    /* Certaines propriétés sont hérités aux éléments descendants. */
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    /* Indique la profondeur de l'élément, plus la valeur est élevée, plus l'élément est "proche" de l'écran */
+    z-index: 1;
+    /* On peut avoir plusieurs images en background, pour celà il faut les séparer d'une virgule. Les premières seront au dessus des suivantes. */
+    background-image: url(../paysage/lava.jpg), url(../paysage/space.jpg);
+    /* Si j'indique une seule valeur, elle sera appliquée à toute les images. Mais si je souhaite une valeur différente pour chaque image, il me faut les séparer d'une virgule. */
+    background-repeat: no-repeat, repeat;
+}
+nav, main
+{
+    margin-top: 50px;
+    display:inline-block;
+    height: 100%;
+    padding: 2rem;
+}
+nav
+{
+    position: relative;
+    z-index: 2;
+    width: 200px;
+    background-image: linear-gradient(90deg,blue 33%, white 33%,white 66%, red 66%);
+}
+nav ul
+{
+    /* En position sticky, l'élément reste dans le flux de la page, mais si on scroll,
+     quand l'élément atteint la position demandée (ici 20px du top du viewport),
+      il commence à suivre le scrolling. 
+      Il ne pourra cependant pas sortir de son parent. */
+    position: sticky;
+    top: 20px;
+}
+main
+{
+    width: calc(100% - 205px);
+    /* 
+        La position relative, garde l'élément dans le flux de la page et permet de le déplacer par rapport à sa position d'origine.
+    */
+    position: relative;
+    top: 100px;
+    background: radial-gradient(circle ,red 20%, white 20%);
+
+}
+main p:first-child
+{
+    /* https://www.cssgradient.io */
+    background-image: linear-gradient(45deg, #ffff08 25%, #000305 25%, #000305 50%, #ffff08 50%, #ffff08 75%, #000305 75%);
+    background-size: 56.57px 56.57px; 
+    color: red;
+    
+}
+main p:last-child
+{
+    background: conic-gradient(red 6deg, orange 6deg 18deg, yellow 18deg 45deg, green 45deg 110deg, blue 110deg 200deg, purple 200deg);
+    height: 300px;
+}
+button
+{
+    /* La position absolue sort l'élément du flux de la page et permet de la positionner par rapport à son parent positionné le plus proche, ou par défaut, le document */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+img
+{
+    width: 100px;
+    border-radius: 50%;
+    margin: 5px;
+    /* "float" retire l'élément du flux original pour le replacer ailleurs, utilse par exemple pour avoir du texte qui s'adapte à une forme. */
+    float: left;
+    /* "shape-outside" permet au texte de se placer autour d'un élément en float en suivant sa forme. */
+    shape-outside: margin-box;
+}

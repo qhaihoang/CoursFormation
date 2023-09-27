@@ -1,0 +1,10 @@
+ol {
+    background: linear-gradient(to right, gold, gold) no-repeat 0 0;
+    background-size: 4px 0%;
+    transition: 2s;
+    margin:1em;
+  }
+  
+  ol:hover {
+    background-size: 4px 100%;
+  }

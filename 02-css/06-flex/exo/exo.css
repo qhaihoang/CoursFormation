@@ -1,0 +1,137 @@
+  *,
+  ::before,
+  ::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  .colonne {
+      background: cyan;
+      display: flex;
+      flex-flow: row wrap;
+      height: 100vh;
+  }
+
+  .Couleur1 {
+      background-color: cyan;
+
+  }
+
+  .Couleur2 {
+      background-color: rgb(43, 247, 36);
+
+  }
+
+  .Couleur3 {
+      background-color: darkorange;
+
+  }
+
+  .Couleur4 {
+      background-color: palevioletred;
+
+  }
+
+  .Couleur5 {
+      background-color: blue;
+
+  }
+
+  .Couleur6 {
+      background-color: yellow;
+
+  }
+
+  .Couleur7 {
+      background-color: burlywood;
+
+  }
+
+  .Couleur8 {
+      background-color: lightseagreen;
+
+  }
+
+  .Couleur9 {
+      background-color: rgb(0, 110, 255);
+  }
+
+  .Size {
+      width: 12.5%;
+  }
+
+  @media (max-width: 768px) {
+      .colonne {
+          height: 100vh;
+
+      }
+
+      .Size {
+          width: 25%;
+
+
+      }
+
+  }
+
+  @media (max-width: 480px) {
+      .colonne {
+          height: 100vh;
+
+      }
+
+      .Size {
+          width: 48%;
+          margin: 1%;
+
+
+      }
+
+  }
+
+  .colonne2 {
+      display: flex;
+      flex-flow: row wrap;
+
+  }
+
+  .Size2 {
+      height: 50vh;
+      width: 25%;
+
+  }
+
+  #Row5 {
+      width: 100%;
+
+  }
+  @media (max-width: 768px) {
+    .colonne2 {
+        height: 100vh;
+
+
+    }
+
+    .Size2 {
+        width: 50%;
+        height: 20vh;
+    }
+
+}
+
+  @media (max-width: 480px) {
+      .colonne2 {
+          flex-flow: column;
+          height: 100vh;
+      }
+
+      .Size2 {
+          width: 100%;
+      }
+
+  }
+
+
+
+ 

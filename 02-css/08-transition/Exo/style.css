@@ -1,0 +1,91 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: white;
+  height: 100vh;
+}
+li {
+  margin: 1rem 0;
+  display: inline-block;
+}
+button {
+  font-size: 1.5rem;
+  aspect-ratio: 1/0.5;
+}
+li:nth-child(1) button {
+  transition:all;
+  transition-duration: 2s;
+  border: solid rgb(60, 59, 59) 5px;
+  background-color: grey;
+  cursor: pointer;
+  color: rgb(60, 59, 59);
+  display: inline-block;
+  
+}
+li:nth-child(1) button:hover {
+  transition-property: none;
+  border: red solid;
+  color: red;
+  background-color: palevioletred;
+  transform: rotatey(4turn);
+}
+
+li:nth-child(2) button {
+  transition: all 1.5s;
+  border-radius: 20px;
+  height: 5vw;
+  font-size: 2vw;
+  width: 15vw;
+  cursor: pointer;
+  background-color: orange;
+  font-weight: bold;
+  color: white;
+  border-color: orange;
+}
+li:nth-child(2):hover button {
+  border-color: white;
+}
+li:nth-child(3) button {
+  border-radius: 10px;
+  height: 6vw;
+  font-size: 20px;
+  width: 20vw;
+  background-color: palevioletred;
+  color: white;
+  font-weight: bold;
+  border: none;
+  box-shadow: 3px 3px 3px 3px grey;
+  transition: all 1s linear;
+  transition-delay: 0.5s;
+  cursor: pointer;
+}
+li:nth-child(3):hover button {
+  transform: rotatex(1turn);
+  scale: 0.85;
+}
+.ligne{
+    
+}
+li:nth-child(4) button {
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  width: 300px;
+  height: 100px;
+  background-color: grey;
+  cursor: pointer;
+  color: purple;
+  transition-delay: 2s;
+  transition-duration: 2s;
+}
+li:nth-child(4):hover button {
+  color: black;
+  
+  
+  
+}

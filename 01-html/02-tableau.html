@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les tableaux en HTML</title>
+    <style>
+        table, th, td
+        { 
+            border: 2px solid black
+
+
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Case</td>
+            <td>Case1</td>
+        </tr>
+        <tr>
+            <td >Case</td>
+            <td >Case2</td>
+        </tr>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Case</th>
+                <th colspan="2">Case1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cerise</td>
+                <td>Banane</td>
+                <td>Pomme</td>
+                <td rowspan="2">Poire</td>
+            </tr>
+            <tr>
+                <td>Tomate</td>
+                <td colspan="2">Courgette</td>
+                <td>Concombre</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Tomate fruit ou légume</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
