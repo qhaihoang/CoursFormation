@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo final</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css">
+
+</head>
+
+<body>
+
+    <body>
+
+
+        <div id="menuToggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#products">PRODUCTS</a></li>
+            </ul>
+        </div>
+
+
+
+
+        <div class="home" id="home">
+            <p class="title1">Over One Hundred<br> Flavors Of</p>
+            <p class="title2">SPECIALLY CRAFTED<br> TEA</p><br>
+        </div>
+        <div class="features" id="skills">
+            <div class="featuresChild"><i class="fa-solid fa-mug-hot"></i>
+                <h4>Made In Us</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="featuresChild"><i class="fas fa-glass-cheers"></i>
+                <h4>Relaxation</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing Unde laudantium quae
+                    doloribus illo
+                    incidunt illum. </p>
+            </div>
+            <div class="featuresChild"><i class="fas fa-bomb"></i>
+                <h4>Energy</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam laudantium dignissimos porro in.
+                </p>
+            </div>
+            <div class="featuresChild"><i class="fas fa-mortar-pestle"></i>
+                <h4>Family Recipe</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, vero tempora veritatis recusandae cum
+                    obcaecati.</p>
+            </div>
+        </div>
+        <div class="aboutTea" id="about">
+            <img src="../images/about-bcg.jpeg" alt="Teapic" class="teaPic">
+            <p class="teatle1">About Our</p>
+            <p class="teatle2"> Tea Station</p>
+            <p class="teaDesc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Sit amet eum earum
+                laboriosam at quod facere sunt quos. Officia perspiciatis eveniet odit dolor, accusamus molestiae, quasi
+                dolores, deserunt voluptate hic?</p>
+            <button class="learnBtn" role="button">LEARN MORE</button>
+        </div>
+
+        <div class="products" id="products">
+
+            <p class="titleProd1">Check Out</p>
+            <p class="titleProd2">Our Products</p>
+            <p class="prodDesc"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugit sint aliquid
+                deleniti neque at cum, odit.</p>
+            <button class="inventoryBtn">INVENTORY</button>
+
+            <img src="../images/product-1.jpeg" alt="product1">
+            <p class="imgName">Ginger Peach Tea</p>
+            <p class="price">$6.99</p>
+            <img src="../images/product-2.jpeg" alt="product2">
+            <p class="imgName">White Tea</p>
+            <p class="price">$6.99</p>
+            <img src="../images/product-3.jpeg" alt="product3">
+            <p class="imgName">Fruit Sangria</p>
+            <p class="price">$6.99</p>
+        </div>
+        <div class="service">
+            <p class="titleServ1">Explore</p>
+            <p class="titleServ2">Our Services</p>
+            <div class="card1">
+                <div class="iconSize"><i class="fas fa-mortar-pestle"></i></div>
+                <h4 class="textFont">Custom Recipes</h4>
+                <p class="loremFont">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Ab nihil
+                    necessitatibus voluptatem modi maiores.</p>
+                <button class="readBtn">Read More</button>
+            </div>
+            <div class="card2">
+                <div class="iconSize"><i class="fas fa-home"></i></div>
+                <h4 class="textFont">Home Delivery</h4>
+                <p class="loremFont">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Ab nihil
+                    necessitatibus voluptatem modi maiores.</p>
+                <button class="readBtn">Read More</button>
+            </div>
+            <div class="card3">
+                <div class="iconSize"><i class="fa-solid fa-mug-hot"></i></div>
+                <h4 class="textFont">Tea Aging</h4>
+                <p class="loremFont">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Ab nihil
+                    necessitatibus voluptatem modi maiores.</p>
+                <button class="readBtn">Read More</button>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="addressForm">
+                <i class="fa-solid fa-paper-plane"></i>
+                <h4>Address</h4>
+                <p>523 N Fairfax Ave Los Angeles, Ca 90048</p>
+            </div>
+            <div class="emailForm">
+                <i class="fa-solid fa-envelope"></i>
+                <h4>Email</h4>
+                <p>Email@email.com</p>
+            </div>
+            <div class="telephoneForm">
+                <i class="fa-solid fa-phone"></i>
+                <h4>Telephone</h4>
+                <p>+ 123 456 789</p>
+            </div>
+            <div class="container">
+                <form id="contact" action="" method="post">
+                    <h3>Contact Us</h3>
+                    <fieldset>
+                        <input placeholder="NAME" type="text" tabindex="1" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="EMAIL" type="email" tabindex="2" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <textarea placeholder="MESSAGE" tabindex="5" required></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <footer class="socialCopy">
+           <div class="moveIcon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+           </div>
+            <div class="copyRight">
+                <i class="fa fa-copyright">2022</i>
+                <p> <h4>TEA STATION</h4> ALL RIGHTS RESERVED</p>
+            </div>
+        </footer>
+        </div>
+    </body>
+
+</html>
