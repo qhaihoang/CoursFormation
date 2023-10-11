@@ -1,0 +1,102 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.displayGame {
+    height: 80vh;
+    background-color: #1b3b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardFlip {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    margin-bottom: 200px;
+   
+}
+.cardInner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.flipthecard2 {
+    transform: rotateY(180deg);
+  }
+.flipthecard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+    display: flex !important;
+  }
+.cardBack {
+
+    height: 300px;
+    width: 200px;
+    background: url(../images/backCard.png) no-repeat;
+    background-size: contain;
+
+}
+
+.cardFront {
+    display: none;
+    height: 300px;
+    width: 200px;
+    background-color: white;
+    transform: rotateY(180deg);
+    font-size: 5em;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.textContainer {
+    text-align: center;
+    width: 80%;
+    height: 100px;
+    font-size: 2em;
+    padding-top: 25px;
+    color: white;
+
+}
+
+.bottomMenu {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #102210;
+    height: 20vh;
+}
+
+.inputNum {
+    height: 80px;
+    width: 100px;
+    font-size: 2em;
+}
+
+.hidden {
+    display: none;
+}
+
+.btnStart {
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    border: 3px solid red;
+    border-radius: 12px;
+    font-size: 2em;
+    font-weight: bold;
+}
