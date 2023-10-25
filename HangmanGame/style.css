@@ -1,0 +1,125 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+}
+
+.firstContainer {
+    width: 850px;
+    display: flex;
+
+}
+
+.hangMan {
+    padding: 20px;
+}
+
+.secretWordBox {
+    display: flex;
+}
+
+.wordDisplay {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.wordDisplay .letter {
+    width: 28px;
+    border-bottom: 5px solid black;
+    height: 60px;
+    padding-top: 20px;
+    padding-left: 3px;
+}
+
+.wordDisplay .letter.guessed {
+    border: transparent;
+}
+
+.lives {
+    
+    font-size: 2rem;
+}
+.lives b{
+    color: rgb(92, 4, 4);
+}
+
+.keyboard button {
+    width: calc(100% / 9 - 5px);
+    text-transform: uppercase;
+    background-color: #5676a1;
+    color: antiquewhite;
+    cursor: pointer;
+    border-radius: 15%;
+}
+
+.keyboard button:hover {
+    background-color: #80aeee;
+}
+.keyboard button[disabled]{
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.gameModal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    transition: opacity 0.4s ease;
+
+}
+.gameModal.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.gameModal .boxContent {
+    background: white;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    max-height: 400px;
+}
+
+.gameModal h4{
+    font-size: 1.6rem;
+}
+.gameModal p {
+    font-size: 1.15rem;
+    margin: 15px 0 30px;
+    font-weight: 500;
+}
+.gameModal p b {
+    color: #c70000;
+    font-weight: 700;
+}
